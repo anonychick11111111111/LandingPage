@@ -52,7 +52,7 @@
 }
 
 .link_eng > li> Button { 
-    padding: 5px;
+    padding: 10px;
     background-color: #226BD0; 
     border: 1px;
     margin-left: 3rem;
@@ -378,12 +378,23 @@
     margin-top: 10px;
 }
 
-.popular_content1 >p {
+.popular_content1 > h4 > a {
+    text-decoration: none;
+    color: #182E4E; 
+    font-family: 'poppins'; 
+    font-size: 22px; 
+    line-height: 32px; 
+    font-family: 'SemiBold'; 
+    margin-top: 10px;
+}
+
+.popular_content1 > a {
     font-size: 11; 
     color: #868592; 
     font-family: 'Poppins'; 
     line-height: 23px; 
     margin-top: 10px;
+    text-decoration: none;
 }
 .room {
     display: flex;
@@ -401,17 +412,19 @@
     display: flex;
     padding-top: 10px;
 }
-.group_room1 >p {
+.group_room1 >a  {
     color: #868592; 
     line-height: 20px; 
     font-family: 'Poppins';
+    text-decoration: none;
 }
-.group_room1_img> p { 
+.group_room1_img>a:nth-child(2) { 
     color: #182E4E;
     line-height: 23px; 
     font-family: 'Poppins'; 
     font-weight: 600;
     margin-left: 10px;   
+    text-decoration: none;
 }
 
 /* ///// */
@@ -421,12 +434,22 @@
     font-family: 'Poppins';
 }
 
-.group_room2 >p:first-child {
+.group_room2 > a:first-child {
     color: #868592; 
     line-height: 20px; 
     font-family: 'Poppins';
+    text-decoration: none;
 }
-.group_room2> p:last-child { 
+.group_room2 > p { 
+    color: #182E4E;
+    line-height: 23px; 
+    font-family: 'Poppins'; 
+    font-weight: 600; 
+    padding-top: 10px;
+}
+
+.group_room2 > p > a{ 
+    text-decoration: none;
     color: #182E4E;
     line-height: 23px; 
     font-family: 'Poppins'; 
@@ -440,12 +463,22 @@
     font-family: 'Poppins';
 }
 
-.group_room3 >p:first-child {
+.group_room3 >a:first-child {
     color: #868592; 
     line-height: 20px; 
     font-family: 'Poppins';
+    text-decoration: none;
 }
-.group_room3> p:last-child { 
+.group_room3 > p { 
+    color: #182E4E;
+    line-height: 23px; 
+    font-family: 'Poppins'; 
+    font-weight: 600; 
+    padding-top: 10px;
+}
+
+.group_room3 > p > a{ 
+    text-decoration: none;
     color: #182E4E;
     line-height: 23px; 
     font-family: 'Poppins'; 
@@ -584,6 +617,11 @@
     margin-top: 100px;   
 }
 
+.container_body8 {
+    padding-top: 100px;
+    margin-left: 135px; 
+    margin-right: 135px;
+}
 
 .address > .container_body8 > .wrap  {
     background-color: #2B3F65; height: 391px;
@@ -614,14 +652,14 @@
 .address_submit_group  {
     text-align: center;
 }
-.address_submit_group > input {
+.address_submit_group > form > input {
     width: 509px; 
     height: 79px; 
     margin-top: 30px;
     padding-left: 30px;
 }
 
-.address_submit_group > button {
+.address_submit_group > form > button {
     height: 79px;
     width: 150px;
     background-color: #FFFFFF;
@@ -633,6 +671,11 @@
 .footer {
     width: 100%;
     background-color: #FFFFFF;
+}
+.container_body9 {
+    padding-top: 100px;
+    margin-left: 135px; 
+    margin-right: 135px;
 }
 .service > ul {
     display: flex; float: right
