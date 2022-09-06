@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./asset/font-awsome/css/all.css" rel="stylesheet">
+    <script src="./asset/jquery/jquery-index"></script>
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 <body class="body">
     <div class="container_body1">
         <!-- // Begin Navbar -->
+        <div id="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="navbar">
             <img src="./asset/image/trusted.png" alt="">
             <ul  class=" nav_link">
@@ -380,5 +384,13 @@
         </div>    
     </div>
     <!-- endfooter -->
+
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('.navbar').slideToggle();
+            });
+        })
+    </script>
 </body>
 </html>
