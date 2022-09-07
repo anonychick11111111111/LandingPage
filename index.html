@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./asset/font-awsome/css/all.css" rel="stylesheet">
-    <script src="./asset/jquery/jquery-index"></script>
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 <body class="body">
+    <div id="toggle">
+        <i class="fas fa-bars"></i>
+    </div>
     <div class="container_body1">
         <!-- // Begin Navbar -->
-        <div id="toggle">
+        <!-- <div id="toggle">
             <i class="fas fa-bars"></i>
-        </div>
+        </div> -->
         <div class="navbar">
             <img src="./asset/image/trusted.png" alt="">
             <ul  class=" nav_link">
@@ -80,9 +82,9 @@
                     <form>
                         <div class="select">
                         <select id="author_id" name="author_name">
-                            <option value="cuong">Location</option>
-                            <option value="Ho_Chi_Minh">Ho Chi Minh</option>
-                            <option value="Ha_Noi">Ha Noi</option>
+                            <option value="cuong"><p>Location</p></option>
+                            <option value="Ho_Chi_Minh"><p>Ho Chi Minh</p></option>
+                            <option value="Ha_Noi"><p>Ha Noi</p></option>
                         </select>
                         <select id="author_id" name="author_name">
                             <option value="cuong">Type</option>
@@ -112,7 +114,7 @@
                         Why do you <br>
                         choose us?
                     </h1>
-
+                    <div class="wr">
                     <div class="reason_1">
                         <img src="./asset/image/18118.png" alt="">
                         <div class="reson_detail1">
@@ -143,6 +145,7 @@
                             </p>
                         </div>
                     </div> 
+                    </div>
                 </div>
                 <div class="img_fetures">
                     <img  class="img_Fetures_4865"src="./asset/image/4865.png" alt="">
@@ -385,6 +388,7 @@
     </div>
     <!-- endfooter -->
 
+    <script src="./asset/jquery/jquery-3.6.1.js"></script>
     <script>
         $(document).ready(function(){
             $('#toggle').click(function(){
